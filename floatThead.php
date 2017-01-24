@@ -21,5 +21,6 @@ class AdminerFloatThead {
 		}
 		echo '<script src="'.h($this->pathToFloatThead).'"></script>';
 		echo '<script>$(document).ready(function() { $(\'#content table\').first().floatThead(); });</script>';
+		echo '<style type="text/css">.floatThead-container { overflow: visible !important; }</style>';
 	}
 }
