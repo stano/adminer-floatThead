@@ -10,7 +10,7 @@ class AdminerFloatThead {
 	 * @param string $pathToFloatThead Path to floatThead js library. Can be url or filesystem relative path related to the adminer directory.
 	 */
 	public function __construct($pathToJquery='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js',
-		$pathToFloatThead='https://cdnjs.cloudflare.com/ajax/libs/floatthead/1.4.5/jquery.floatThead.js') {
+		$pathToFloatThead='https://cdnjs.cloudflare.com/ajax/libs/floatthead/2.0.3/jquery.floatThead.min.js') {
 		$this->pathToJquery = $pathToJquery;
 		$this->pathToFloatThead = $pathToFloatThead;
 	}
