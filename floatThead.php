@@ -17,10 +17,10 @@ class AdminerFloatThead {
 
 	public function head() {
 		if ($this->pathToJquery) {
-			echo '<script'.nonce().' src="'.h($this->pathToJquery).'"></script>';
+			echo '<script'.Adminer\nonce().' src="'.Adminer\h($this->pathToJquery).'"></script>';
 		}
-		echo '<script'.nonce().' src="'.h($this->pathToFloatThead).'"></script>';
-		echo '<script'.nonce().'>$(document).ready(function() { $(\'#content table\').first().floatThead(); });</script>';
+		echo '<script'.Adminer\nonce().' src="'.Adminer\h($this->pathToFloatThead).'"></script>';
+		echo '<script'.Adminer\nonce().'>$(document).ready(function() { $(\'#content table\').first().floatThead(); });</script>';
 		echo '<style type="text/css">.floatThead-container { overflow: visible !important; }</style>';
 	}
 }
